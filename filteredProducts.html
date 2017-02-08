@@ -26,7 +26,7 @@
 
 </head>
 
-<body class="index">
+<body class="filteredProducts">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -41,7 +41,7 @@
                 </button>
                 <a class="navbar-brand" href="#">Sexy Flea Market</a>
             </div>
-            
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -49,7 +49,7 @@
                         <a href="./newProduct.html">Create new article</a>
                     </li>
                     <li>
-                        <a href="./filteredProducts.html">Custom search</a>
+                        <a href="#">Custom search</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,29 @@
             </div>
         </div>
 
-        <h1 class="main-headline">Purchase all of our most sexy products:</h1>
+        <h1 class="main-headline">Purchase specific sexiness!</h1>
+        <h2>Select your price limit [€]:</h2>
+
+        <div class="alert alert-danger">
+            <strong>Obacht!</strong> Please fill in the form correctly. That would be so nice. It is just a price, come on..
+        </div>
+
+        <div class="form-group" style="width: 200px; margin-bottom: 30px;">
+            <input class="form-control price_input" type="number" style="border-color: darkcyan" />
+        </div>
+
+        <h4>Do you want products above or below that price?</h4>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default active">
+                    <input type="radio" checked="" name="price" value="priceAbove">Above, I got the money
+                </label>
+            <label class="btn btn-default">
+                    <input type="radio" name="price" value="priceBelow">Below, need to check my wallet
+                </label>
+        </div>
+
+        <button id="filterButton" class="btn btn-primary" style="display: block; margin-top: 20px;">Filter it, son!</button>
+
         <div class="row article-holder"></div>
 
     </div>
@@ -96,7 +118,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom -->
-    <script src="js/apiRequests.js"></script>
+    <script src="js/filteredProducts.js"></script>
 
 </body>
 

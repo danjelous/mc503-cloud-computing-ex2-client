@@ -89,3 +89,10 @@ footer {
 form .alert {
     display: none;
 }
+
+.filteredProducts .alert {
+    display: none;
+}
+.filteredProducts .article-holder {
+    margin-top: 30px;
+}
