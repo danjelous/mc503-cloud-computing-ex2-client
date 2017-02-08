@@ -96,57 +96,67 @@
                 <div class="bootstrap-iso">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-10 col-sm-6 col-xs-12">
+                            <div class="col-md-10 col-sm-10 col-xs-12">
                                 <form>
 
-                                    <p style="font-weight: bold">Wanna get rid of old stuff you don´t need anymore? Just pick an image, title and description and
-                                sell it!</p><br/>
+                                    <p style="font-weight: bold">Wanna get rid of old stuff you don´t need anymore? Just pick an image, title and description
+                                        and sell it!</p><br/>
 
-                                  <div class="alert alert-danger">
+                                    <div class="alert alert-danger">
                                         <strong>Obacht!</strong> Please fill in the form correctly. That would be so nice.
-                                </div>
+                                    </div>
 
-                                    <div class="form-group ">
-                                        <label class="control-label requiredField" for="name">
+                            
+                            <div class="form-group ">
+                                <label class="control-label requiredField" for="article_image">Image
+<span class="asteriskField">
+        *
+       </span>
+      </label>
+                                <select class="form-control" id="article_image" name="article_image" type="text" style="border-color: darkcyan"></select>
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="control-label requiredField" for="name">
        Name
        <span class="asteriskField">
         *
        </span>
       </label>
-                                        <input class="form-control" id="name" name="name" type="text" style="border-color: darkcyan" />
-                                    </div>
-                                    <div class="form-group ">
-                                        <label class="control-label requiredField" for="description">
+                                <input class="form-control" id="name" name="name" type="text" style="border-color: darkcyan" />
+                            </div>
+                            <div class="form-group ">
+                                <label class="control-label requiredField" for="description">
        Description
        <span class="asteriskField">
         *
        </span>
       </label>
-                                        <input class="form-control" id="description" name="description" type="text" style="border-color: darkcyan" />
-                                    </div>
-                                    <div class="form-group ">
-                                        <label class="control-label requiredField" for="prize">
+                                <textarea class="form-control" id="description" rows="5" name="description" type="text" style="border-color: darkcyan"></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <label class="control-label requiredField" for="prize">
        Prize
        <span class="asteriskField">
         *
        </span>
       </label>
-                                        <input class="form-control" id="prize" name="prize" type="text" style="border-color: darkcyan" />
-                                    </div>
-                                    <div class="form-group">
-                                        <div>
-                                            <button id="submitButton" class="btn btn-primary pull-right" name="submit">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                <input class="form-control" id="prize" name="prize" type="text" style="border-color: darkcyan" />
                             </div>
+                            <div class="form-group">
+                                <div>
+                                    <button id="submitButton" class="btn btn-primary pull-right" name="submit">Submit</button>
+                                </div>
+                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <!--Upload Formular Ende-->
-
             </div>
+            <!--Upload Formular Ende-->
+
         </div>
+    </div>
 
     </div>
     <!-- /.container -->
