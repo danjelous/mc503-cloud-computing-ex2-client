@@ -74,10 +74,18 @@ footer {
     margin: 0 auto;
 }
 
+.newProduct .img-responsive {
+    margin: 0 auto;
+}
+
 .productDetail .button-holder {
     display: none;
 }
 
 .button-holder {
     margin-top: 30px;
+}
+
+form .alert {
+    display: none;
 }

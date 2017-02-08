@@ -73,7 +73,7 @@ $(document).ready( function(){
                 $(".button-holder").show();
             });
         } else {
-            articleRoot.append("<h1 class='text-center'>You little bugger removed the id-Param, put it right back there!</h1>");
+            articleRoot.append("<img class='img-responsive text-center' src='img/no_id.jpg' />");
         }
     }
 });

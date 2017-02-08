@@ -39,13 +39,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Sexy Flea Market</a>
+                <a class="navbar-brand" href="./index.html">Sexy Flea Market</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Create new article</a>
+                        <a href="./newProduct.html">Create new article</a>
                     </li>
                 </ul>
             </div>
@@ -58,13 +58,94 @@
     <div class="container">
 
         <div class="row header-holder">
-            <div class="col-md-12">
-                <img src="img/flea-market.jpg" class="img-responsive" alt="">
+            <div class="col-md-12 text-center">
+                <img class="img-responsive " src="img/upload.png" alt="" style="max-height: 300px;">
             </div>
         </div>
 
-        <div class="row article-holder">
 
+        <div class="row">
+
+            <!--Upload Formular-->
+            <div class="col-md-10 col-md-offset-1">
+
+                <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+                <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+                <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+                <!-- Inline CSS based on choices in "Settings" tab -->
+                <style>
+                    .bootstrap-iso .formden_header h2,
+                    .bootstrap-iso .formden_header p,
+                    .bootstrap-iso form {
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: black
+                    }
+                    
+                    .bootstrap-iso form button,
+                    .bootstrap-iso form button:hover {
+                        color: white !important;
+                    }
+                    
+                    .asteriskField {
+                        color: red;
+                    }
+                </style>
+
+                <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+                <div class="bootstrap-iso">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-10 col-sm-6 col-xs-12">
+                                <form>
+
+                                    <p style="font-weight: bold">Wanna get rid of old stuff you don´t need anymore? Just pick an image, title and description and
+                                sell it!</p><br/>
+
+                                  <div class="alert alert-danger">
+                                        <strong>Obacht!</strong> Please fill in the form correctly. That would be so nice.
+                                </div>
+
+                                    <div class="form-group ">
+                                        <label class="control-label requiredField" for="name">
+       Name
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+                                        <input class="form-control" id="name" name="name" type="text" style="border-color: darkcyan" />
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label requiredField" for="description">
+       Description
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+                                        <input class="form-control" id="description" name="description" type="text" style="border-color: darkcyan" />
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label requiredField" for="prize">
+       Prize
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+                                        <input class="form-control" id="prize" name="prize" type="text" style="border-color: darkcyan" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <button id="submitButton" class="btn btn-primary pull-right" name="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Upload Formular Ende-->
+
+            </div>
         </div>
 
     </div>
@@ -91,6 +172,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/newProductValidation.js"></script>
 
 </body>
 
