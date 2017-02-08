@@ -59,3 +59,25 @@ footer {
 footer {
     text-align: center;
 }
+
+.main-headline {
+    margin-bottom: 20px;
+}
+
+.image-detail {
+    max-width: 80%;
+    max-height: 500px;
+    margin-bottom: 30px;
+}
+
+.productDetail .img-responsive {
+    margin: 0 auto;
+}
+
+.productDetail .button-holder {
+    display: none;
+}
+
+.button-holder {
+    margin-top: 30px;
+}
