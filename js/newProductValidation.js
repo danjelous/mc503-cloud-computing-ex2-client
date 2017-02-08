@@ -3,6 +3,7 @@ var hostURL = "https://hidden-tundra-33627.herokuapp.com/";
 $(document).ready(function () {
 
     var $selectBox = $("form select");
+    var pictureArray = [];
 
     // Get image names
     $.get(hostURL + "api/articles", function (data) {
@@ -10,8 +11,15 @@ $(document).ready(function () {
 
         for (var i = 0; i < data.data.length; i++) {
 
-            // Add to selectBox
-            $selectBox.append("<option style='background-image:url(" + hostURL + data.data[i].picture_path + ")';>" + data.data[i].picture_path + "</option>");
+            var item = data.data[i].picture_path;
+
+            // Only add picture  if not already in there
+            if ($.inArray(item, pictureArray) == -1) {
+
+                // Add to selectBox
+                $selectBox.append("<option>" + item + "</option>");
+                pictureArray.push(item);
+            }
         }
 
     });
@@ -47,9 +55,9 @@ $("form").on("submit", function (e) {
             type: "POST",
             url: hostURL + "api/articles",
             data: newData,
-            success: function(data){
-               window.location.assign(rootPageURL);
-           }
+            success: function (data) {
+                window.location.assign(rootPageURL);
+            }
         });
 
         e.preventDefault();
