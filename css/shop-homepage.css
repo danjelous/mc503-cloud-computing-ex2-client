@@ -52,3 +52,11 @@ body {
 footer {
     margin: 50px 0;
 }
+
+.header-holder {
+    padding: 30px 0 30px 0;
+}
+
+footer {
+    text-align: center;
+}
