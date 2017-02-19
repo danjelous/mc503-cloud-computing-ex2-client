@@ -1,4 +1,4 @@
-var hostURL = "https://hidden-tundra-33627.herokuapp.com/";
+var hostURL = "https://mc503-fleamarket.azurewebsites.net/";
 var articleRoot = $(".article-holder");
 
 $(document).ready( function(){
